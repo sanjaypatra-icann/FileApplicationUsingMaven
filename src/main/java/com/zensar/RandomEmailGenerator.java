@@ -8,5 +8,7 @@ public class RandomEmailGenerator {
     public String generate() {
         return "sanjay@yoursite.com";
     }
-
+    public String generate2() {
+        return "sanjay@yoursite.com";
+    }
 }
