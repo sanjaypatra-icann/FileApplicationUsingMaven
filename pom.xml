@@ -32,14 +32,14 @@
       <destFile>${sonar.jacoco.reportPath}</destFile>
       <append>true</append>
     </configuration>
-    <executions>
+   <!-- <executions>
       <execution>
         <id>agent</id>
         <goals>
           <goal>prepare-agent</goal>
         </goals>
       </execution>
-    </executions>
+    </executions>-->
   </plugin>
    </plugins>
  </build>
