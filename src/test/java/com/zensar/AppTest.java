@@ -15,6 +15,7 @@ public class AppTest
      *
      * @param testName name of the test case
      */
+
     public AppTest( String testName )
     {
         super( testName );
@@ -25,7 +26,8 @@ public class AppTest
      */
     public static Test suite()
     {
-        return new TestSuite( AppTest.class );
+        return new TestSuite(
+                AppTest.class );
     }
 
     /**
