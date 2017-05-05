@@ -6,7 +6,7 @@ package com.zensar;
 public class RandomEmailGenerator {
 
     public String generate() {
-        return "feedback@yoursite.com";
+        return "sanjay@yoursite.com";
     }
 
 }

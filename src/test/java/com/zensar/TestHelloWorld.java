@@ -17,7 +17,7 @@ public class TestHelloWorld {
         String email = obj.generate();
 
         Assert.assertNotNull(email);
-        Assert.assertEquals(email, "feedback@yoursite.com");
+        Assert.assertEquals(email, "sanjay@yoursite.com");
 
     }
 }
