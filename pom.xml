@@ -34,6 +34,16 @@
   </dependencies>
  <build>
    <plugins>
+       <!-- Below plugin ensures the execution of test cases during maven build-->
+       <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-surefire-plugin</artifactId>
+           <configuration>
+               <includes>
+                   <include>${runSuite}</include>
+               </includes>
+           </configuration>
+       </plugin>
   <plugin>
     <groupId>org.jacoco</groupId>
     <artifactId>jacoco-maven-plugin</artifactId>
