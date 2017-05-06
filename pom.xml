@@ -1,6 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <properties>
+      <sonar.sources>src/main</sonar.sources>
+      <sonar.tests>src/test</sonar.tests>
+      <!-- Below property indicates the pattern of the test suite -->
+      <runSuite>**/*Suite.class</runSuite>
     <!-- Sonar -->
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
     <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
@@ -38,14 +42,14 @@
       <destFile>${sonar.jacoco.reportPath}</destFile>
       <append>true</append>
     </configuration>
-   <!-- <executions>
-      <execution>
-        <id>agent</id>
-        <goals>
-          <goal>prepare-agent</goal>
-        </goals>
-      </execution>
-    </executions>-->
+    <!--  <executions>
+          <execution>
+              <id>agent</id>
+              <goals>
+                  <goal>prepare-agent</goal>
+              </goals>
+          </execution>
+      </executions>-->
   </plugin>
    </plugins>
  </build>
