@@ -20,4 +20,14 @@ public class TestHelloWorld {
         Assert.assertEquals(email, "sanjay@yoursite.com");
 
     }
+    @Test
+    public void testEmailGenerator2() {
+
+        RandomEmailGenerator obj = new RandomEmailGenerator();
+        String email = obj.generate2();
+
+        Assert.assertNotNull(email);
+        Assert.assertEquals(email, "sanjay@yoursite.com");
+
+    }
 }
