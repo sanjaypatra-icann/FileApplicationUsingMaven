@@ -8,7 +8,7 @@
         <!-- Sonar -->
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-        <sonar.jacoco.reportPath>${basedir}/target/jacoco.exec</sonar.jacoco.reportPath>
+      <!--  <sonar.jacoco.reportPath>${basedir}/target/jacoco.exec</sonar.jacoco.reportPath>-->
         <jacoco.version>0.7.2.201409121644</jacoco.version>
         <testng.version>6.8.8</testng.version>
         <java.version>1.8</java.version>
@@ -86,7 +86,9 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco.version}</version>
-
+                <configuration>
+                    <destFile>${basedir}/coverage-reports/jacoco.exec</destFile>
+                </configuration>
                 <executions>
                     <execution>
                         <id>default-prepare-agent</id>
