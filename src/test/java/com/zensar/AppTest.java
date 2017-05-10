@@ -9,7 +9,6 @@ import org.junit.Ignore;
  * Unit test for simple App.*/
 
 
-@Ignore
 public class AppTest
     extends TestCase
 {

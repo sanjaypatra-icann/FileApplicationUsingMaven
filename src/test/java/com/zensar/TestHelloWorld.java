@@ -21,7 +21,7 @@ public class TestHelloWorld {
         Assert.assertEquals(email, "sanjay@yoursite.com");
 
     }
-    /*@Ignore
+
     @Test
     public void testEmailGenerator2() {
 
@@ -31,6 +31,6 @@ public class TestHelloWorld {
         Assert.assertNotNull(email);
         Assert.assertEquals(email, "sanjaypatra@yoursite.com");
 
-    }*/
+    }
 
 }
