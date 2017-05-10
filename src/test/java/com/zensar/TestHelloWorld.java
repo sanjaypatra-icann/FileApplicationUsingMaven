@@ -11,7 +11,7 @@ import org.junit.Test;
  */
 public class TestHelloWorld {
 
-    @Test
+  /*  @Test
     public void testEmailGenerator() {
 
         RandomEmailGenerator obj = new RandomEmailGenerator();
@@ -20,7 +20,7 @@ public class TestHelloWorld {
         Assert.assertNotNull(email);
         Assert.assertEquals(email, "sanjay@yoursite.com");
 
-    }
+    }*/
     /*@Ignore
     @Test
     public void testEmailGenerator2() {
